@@ -4,6 +4,10 @@ package com.java.AirlinesManagement.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+<<<<<<< HEAD
+=======
+import org.springframework.security.access.prepost.PreAuthorize;
+>>>>>>> 4bd299e (Added JWT)
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,6 +40,10 @@ public class RouteController {
 	private Services service;
 	
 	@PostMapping
+<<<<<<< HEAD
+=======
+	@PreAuthorize("hasRole('ADMIN')")
+>>>>>>> 4bd299e (Added JWT)
 	public ResponseEntity<String> addRoutes(@Valid @RequestBody RouteDto dto) throws RouteException
 	{
 		System.out.println(dto);
@@ -45,6 +53,10 @@ public class RouteController {
 	}
 	
 	@GetMapping("/{routeId}")
+<<<<<<< HEAD
+=======
+	@PreAuthorize("hasRole('USER')")
+>>>>>>> 4bd299e (Added JWT)
 	public ResponseEntity<RouteDto> getRouteById(@PathVariable @Max(value= 999,message="Maximum Value can be 999") @Min(value=100,message="Minimum value can be 100") int routeId) throws RouteException{
 		
 		RouteDto route = service.getRouteById(routeId);
@@ -52,7 +64,11 @@ public class RouteController {
 	}
 	
 	@GetMapping("/flights")
+<<<<<<< HEAD
 	
+=======
+	@PreAuthorize("hasRole('USER')")
+>>>>>>> 4bd299e (Added JWT)
 	public ResponseEntity<RouteDto> getRouteBySourceAndDestination(@RequestParam @NotNull(message="Source can't be NULL")String source,@RequestParam @NotNull(message="Destination can't be NULL")String destination)throws RouteException{
 		
 		RouteDto r= service.getRouteBySourceAndDestination(source,destination);
@@ -60,6 +76,10 @@ public class RouteController {
 	}
 	
 	@PutMapping ("/{routeId}")
+<<<<<<< HEAD
+=======
+	@PreAuthorize("hasRole('ADMIN')")
+>>>>>>> 4bd299e (Added JWT)
 	public ResponseEntity<String> updateSourceAndDestination(@PathVariable Integer routeId, @MatrixVariable String source,@MatrixVariable String destination) throws RouteException{
 
 			int id = service.updateSourceAndDestination(routeId,source,destination);
@@ -67,6 +87,10 @@ public class RouteController {
 	}
 	
 	@PutMapping("/{routeId}/flights")
+<<<<<<< HEAD
+=======
+	@PreAuthorize("hasRole('ADMIN')")
+>>>>>>> 4bd299e (Added JWT)
 	public ResponseEntity<String> updateFlightsInRoute(@PathVariable int routeId, @RequestBody AirlineDto airlines)throws RouteException,AirlineException{
 		
 		service.updateFlightsInRoute(routeId,airlines);
@@ -75,6 +99,10 @@ public class RouteController {
 	}
 	
 	@DeleteMapping("/{routeId}/{flightId}")
+<<<<<<< HEAD
+=======
+	@PreAuthorize("hasRole('ADMIN')")
+>>>>>>> 4bd299e (Added JWT)
 	public ResponseEntity<String>deleteAirlinesInRoute(@PathVariable int routeId,@PathVariable int flightId) throws RouteException,AirlineException{
 		
 		service.deleteAirlinesInRoute(routeId,flightId);
