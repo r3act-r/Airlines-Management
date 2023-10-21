@@ -1,0 +1,391 @@
+01- Aug-2023 20:06:24INFO - HV000001: Hibernate Validator 8.0.0.Final
+01- Aug-2023 20:06:25INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 14304 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+01- Aug-2023 20:06:25INFO - No active profile set, falling back to 1 default profile: "default"
+01- Aug-2023 20:06:25INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01- Aug-2023 20:06:25INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01- Aug-2023 20:06:25INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01- Aug-2023 20:06:26INFO - Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+01- Aug-2023 20:06:27INFO - Tomcat initialized with port(s): 8080 (http)
+01- Aug-2023 20:06:27INFO - Initializing ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:06:27INFO - Starting service [Tomcat]
+01- Aug-2023 20:06:27INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+01- Aug-2023 20:06:27INFO - Initializing Spring embedded WebApplicationContext
+01- Aug-2023 20:06:27INFO - Root WebApplicationContext: initialization completed in 2003 ms
+01- Aug-2023 20:06:27INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+01- Aug-2023 20:06:27INFO - HHH000412: Hibernate ORM core version 6.2.5.Final
+01- Aug-2023 20:06:27INFO - HHH000406: Using bytecode reflection optimizer
+01- Aug-2023 20:06:27INFO - HHH000021: Bytecode provider name : bytebuddy
+01- Aug-2023 20:06:27INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+01- Aug-2023 20:06:27INFO - HikariPool-1 - Starting...
+01- Aug-2023 20:06:28INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@549cbc69
+01- Aug-2023 20:06:28INFO - HikariPool-1 - Start completed.
+01- Aug-2023 20:06:28WARN - HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+01- Aug-2023 20:06:28INFO - HHH000021: Bytecode provider name : bytebuddy
+01- Aug-2023 20:06:29INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01- Aug-2023 20:06:29INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01- Aug-2023 20:06:30WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01- Aug-2023 20:06:31INFO - LiveReload server is running on port 35729
+01- Aug-2023 20:06:31INFO - Starting ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:06:31INFO - Tomcat started on port(s): 8080 (http) with context path '/airlines'
+01- Aug-2023 20:06:31INFO - Started AirlinesManagementApplication in 6.728 seconds (process running for 8.167)
+01- Aug-2023 20:07:08INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01- Aug-2023 20:07:08INFO - Initializing Servlet 'dispatcherServlet'
+01- Aug-2023 20:07:08INFO - Completed initialization in 1 ms
+01- Aug-2023 20:07:08INFO - Request : GET /airlines/routes/100
+01- Aug-2023 20:07:08INFO - IP Address : 0:0:0:0:0:0:0:1
+01- Aug-2023 20:07:08INFO - Parameters [100]
+01- Aug-2023 20:07:09INFO - Method executed: com.java.AirlinesManagement.service.Services.getRouteById with result : RouteDto [routeId=100, source=Patna, destination=Noida, airlines=[AirlineDto [flightId=1, flightName=Vis, arrivalTime=10:00, departureTime=12:00, fare=1500.0], AirlineDto [flightId=2, flightName=null, arrivalTime=10:00, departureTime=10:30, fare=1500.0]]]
+01- Aug-2023 20:09:29INFO - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+01- Aug-2023 20:09:29INFO - Pausing ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:09:29INFO - Stopping service [Tomcat]
+01- Aug-2023 20:09:29INFO - Destroying Spring FrameworkServlet 'dispatcherServlet'
+01- Aug-2023 20:09:29INFO - Stopping ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:09:29INFO - Destroying ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:09:29INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+01- Aug-2023 20:09:29INFO - HikariPool-1 - Shutdown initiated...
+01- Aug-2023 20:09:29INFO - HikariPool-1 - Shutdown completed.
+01- Aug-2023 20:09:29INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 14304 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+01- Aug-2023 20:09:29INFO - No active profile set, falling back to 1 default profile: "default"
+01- Aug-2023 20:09:29INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01- Aug-2023 20:09:29INFO - Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+01- Aug-2023 20:09:29INFO - Tomcat initialized with port(s): 8080 (http)
+01- Aug-2023 20:09:29INFO - Initializing ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:09:29INFO - Starting service [Tomcat]
+01- Aug-2023 20:09:29INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+01- Aug-2023 20:09:29INFO - Initializing Spring embedded WebApplicationContext
+01- Aug-2023 20:09:29INFO - Root WebApplicationContext: initialization completed in 488 ms
+01- Aug-2023 20:09:29INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+01- Aug-2023 20:09:29INFO - HHH000021: Bytecode provider name : bytebuddy
+01- Aug-2023 20:09:29INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+01- Aug-2023 20:09:29INFO - HikariPool-2 - Starting...
+01- Aug-2023 20:09:29INFO - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@432ed45f
+01- Aug-2023 20:09:29INFO - HikariPool-2 - Start completed.
+01- Aug-2023 20:09:29WARN - HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+01- Aug-2023 20:09:29INFO - HHH000021: Bytecode provider name : bytebuddy
+01- Aug-2023 20:09:30INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01- Aug-2023 20:09:30INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01- Aug-2023 20:09:30WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01- Aug-2023 20:09:30INFO - LiveReload server is running on port 35729
+01- Aug-2023 20:09:30INFO - Starting ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:09:30INFO - Tomcat started on port(s): 8080 (http) with context path '/airlines'
+01- Aug-2023 20:09:30INFO - Started AirlinesManagementApplication in 1.467 seconds (process running for 187.672)
+01- Aug-2023 20:09:30INFO - Condition evaluation unchanged
+01- Aug-2023 20:10:29INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01- Aug-2023 20:10:29INFO - Initializing Servlet 'dispatcherServlet'
+01- Aug-2023 20:10:29INFO - Completed initialization in 1 ms
+01- Aug-2023 20:10:29INFO - Request : GET /airlines/routes/100
+01- Aug-2023 20:10:29INFO - IP Address : 0:0:0:0:0:0:0:1
+01- Aug-2023 20:10:29INFO - Parameters [100]
+01- Aug-2023 20:10:29INFO - Method executed: com.java.AirlinesManagement.service.Services.getRouteById with result : RouteDto [routeId=100, source=Patna, destination=Noida, airlines=[AirlineDto [flightId=1, flightName=Vis, arrivalTime=10:00, departureTime=12:00, fare=1500.0], AirlineDto [flightId=2, flightName=null, arrivalTime=10:00, departureTime=10:30, fare=1500.0]]]
+01- Aug-2023 20:11:23INFO - Application shutdown requested.
+01- Aug-2023 20:11:23INFO - Pausing ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:11:23INFO - Stopping service [Tomcat]
+01- Aug-2023 20:11:23INFO - Destroying Spring FrameworkServlet 'dispatcherServlet'
+01- Aug-2023 20:11:23INFO - Stopping ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:11:23INFO - Destroying ProtocolHandler ["http-nio-8080"]
+01- Aug-2023 20:11:23INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+01- Aug-2023 20:11:23INFO - HikariPool-2 - Shutdown initiated...
+01- Aug-2023 20:11:23INFO - HikariPool-2 - Shutdown completed.
+03- Sep-2023 23:54:01INFO - HV000001: Hibernate Validator 8.0.0.Final
+03- Sep-2023 23:54:01INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 1832 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+03- Sep-2023 23:54:01INFO - No active profile set, falling back to 1 default profile: "default"
+03- Sep-2023 23:54:02INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03- Sep-2023 23:54:02INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03- Sep-2023 23:54:05INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03- Sep-2023 23:54:05INFO - Finished Spring Data repository scanning in 128 ms. Found 2 JPA repository interfaces.
+03- Sep-2023 23:54:07INFO - Tomcat initialized with port(s): 8080 (http)
+03- Sep-2023 23:54:07INFO - Initializing ProtocolHandler ["http-nio-8080"]
+03- Sep-2023 23:54:07INFO - Starting service [Tomcat]
+03- Sep-2023 23:54:07INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+03- Sep-2023 23:54:07INFO - Initializing Spring embedded WebApplicationContext
+03- Sep-2023 23:54:07INFO - Root WebApplicationContext: initialization completed in 5806 ms
+03- Sep-2023 23:54:08WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+03- Sep-2023 23:54:08INFO - Stopping service [Tomcat]
+03- Sep-2023 23:54:08INFO - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+03- Sep-2023 23:54:08ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+03- Sep-2023 23:56:46INFO - HV000001: Hibernate Validator 8.0.0.Final
+03- Sep-2023 23:56:46INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 18220 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+03- Sep-2023 23:56:46INFO - No active profile set, falling back to 1 default profile: "default"
+03- Sep-2023 23:56:46INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03- Sep-2023 23:56:46INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03- Sep-2023 23:56:47INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03- Sep-2023 23:56:48INFO - Finished Spring Data repository scanning in 134 ms. Found 2 JPA repository interfaces.
+03- Sep-2023 23:56:49INFO - Tomcat initialized with port(s): 8080 (http)
+03- Sep-2023 23:56:49INFO - Initializing ProtocolHandler ["http-nio-8080"]
+03- Sep-2023 23:56:49INFO - Starting service [Tomcat]
+03- Sep-2023 23:56:49INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+03- Sep-2023 23:56:49INFO - Initializing Spring embedded WebApplicationContext
+03- Sep-2023 23:56:49INFO - Root WebApplicationContext: initialization completed in 2331 ms
+03- Sep-2023 23:56:49WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+03- Sep-2023 23:56:49INFO - Stopping service [Tomcat]
+03- Sep-2023 23:56:49INFO - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+03- Sep-2023 23:56:49ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+03- Sep-2023 23:57:10INFO - HV000001: Hibernate Validator 8.0.0.Final
+03- Sep-2023 23:57:11INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 7508 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+03- Sep-2023 23:57:11INFO - No active profile set, falling back to 1 default profile: "default"
+03- Sep-2023 23:57:11INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03- Sep-2023 23:57:11INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03- Sep-2023 23:57:12INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03- Sep-2023 23:57:12INFO - Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+03- Sep-2023 23:57:13INFO - Tomcat initialized with port(s): 8080 (http)
+03- Sep-2023 23:57:13INFO - Initializing ProtocolHandler ["http-nio-8080"]
+03- Sep-2023 23:57:13INFO - Starting service [Tomcat]
+03- Sep-2023 23:57:13INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+03- Sep-2023 23:57:13INFO - Initializing Spring embedded WebApplicationContext
+03- Sep-2023 23:57:13INFO - Root WebApplicationContext: initialization completed in 2525 ms
+03- Sep-2023 23:57:13WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+03- Sep-2023 23:57:13INFO - Stopping service [Tomcat]
+03- Sep-2023 23:57:13INFO - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+03- Sep-2023 23:57:13ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+04- Sep-2023 00:00:37INFO - HV000001: Hibernate Validator 8.0.0.Final
+04- Sep-2023 00:00:37INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 15464 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+04- Sep-2023 00:00:37INFO - No active profile set, falling back to 1 default profile: "default"
+04- Sep-2023 00:00:37INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04- Sep-2023 00:00:37INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04- Sep-2023 00:00:38INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+04- Sep-2023 00:00:38INFO - Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+04- Sep-2023 00:00:39INFO - Tomcat initialized with port(s): 8080 (http)
+04- Sep-2023 00:00:39INFO - Initializing ProtocolHandler ["http-nio-8080"]
+04- Sep-2023 00:00:39INFO - Starting service [Tomcat]
+04- Sep-2023 00:00:39INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+04- Sep-2023 00:00:39INFO - Initializing Spring embedded WebApplicationContext
+04- Sep-2023 00:00:39INFO - Root WebApplicationContext: initialization completed in 2209 ms
+04- Sep-2023 00:00:40WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+04- Sep-2023 00:00:40INFO - Stopping service [Tomcat]
+04- Sep-2023 00:00:40INFO - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+04- Sep-2023 00:00:40ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+04- Sep-2023 00:01:04INFO - HV000001: Hibernate Validator 8.0.0.Final
+04- Sep-2023 00:01:05INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 15320 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+04- Sep-2023 00:01:05INFO - No active profile set, falling back to 1 default profile: "default"
+04- Sep-2023 00:01:05INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04- Sep-2023 00:01:05INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04- Sep-2023 00:01:06INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+04- Sep-2023 00:01:06INFO - Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+04- Sep-2023 00:01:07INFO - Tomcat initialized with port(s): 8080 (http)
+04- Sep-2023 00:01:07INFO - Initializing ProtocolHandler ["http-nio-8080"]
+04- Sep-2023 00:01:07INFO - Starting service [Tomcat]
+04- Sep-2023 00:01:07INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+04- Sep-2023 00:01:07INFO - Initializing Spring embedded WebApplicationContext
+04- Sep-2023 00:01:07INFO - Root WebApplicationContext: initialization completed in 2135 ms
+04- Sep-2023 00:01:07WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+04- Sep-2023 00:01:07INFO - Stopping service [Tomcat]
+04- Sep-2023 00:01:07INFO - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+04- Sep-2023 00:01:07ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+04- Sep-2023 00:02:38INFO - HV000001: Hibernate Validator 8.0.0.Final
+04- Sep-2023 00:02:38INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 19300 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+04- Sep-2023 00:02:38INFO - No active profile set, falling back to 1 default profile: "default"
+04- Sep-2023 00:02:38INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+04- Sep-2023 00:02:38INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+04- Sep-2023 00:02:39INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+04- Sep-2023 00:02:39INFO - Finished Spring Data repository scanning in 108 ms. Found 2 JPA repository interfaces.
+04- Sep-2023 00:02:40INFO - Tomcat initialized with port(s): 8080 (http)
+04- Sep-2023 00:02:40INFO - Initializing ProtocolHandler ["http-nio-8080"]
+04- Sep-2023 00:02:40INFO - Starting service [Tomcat]
+04- Sep-2023 00:02:40INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+04- Sep-2023 00:02:40INFO - Initializing Spring embedded WebApplicationContext
+04- Sep-2023 00:02:40INFO - Root WebApplicationContext: initialization completed in 2292 ms
+04- Sep-2023 00:02:40INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+04- Sep-2023 00:02:41INFO - HHH000412: Hibernate ORM core version 6.2.5.Final
+04- Sep-2023 00:02:41INFO - HHH000406: Using bytecode reflection optimizer
+04- Sep-2023 00:02:42INFO - HHH000021: Bytecode provider name : bytebuddy
+04- Sep-2023 00:02:42INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+04- Sep-2023 00:02:42INFO - HikariPool-1 - Starting...
+04- Sep-2023 00:02:43INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c3f5265
+04- Sep-2023 00:02:43INFO - HikariPool-1 - Start completed.
+04- Sep-2023 00:02:43WARN - HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04- Sep-2023 00:02:44INFO - HHH000021: Bytecode provider name : bytebuddy
+04- Sep-2023 00:02:46INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+04- Sep-2023 00:02:49INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+04- Sep-2023 00:02:51WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04- Sep-2023 00:02:53INFO - LiveReload server is running on port 35729
+04- Sep-2023 00:02:53INFO - Starting ProtocolHandler ["http-nio-8080"]
+04- Sep-2023 00:02:53INFO - Tomcat started on port(s): 8080 (http) with context path '/airlines'
+04- Sep-2023 00:02:53INFO - Started AirlinesManagementApplication in 16.043 seconds (process running for 17.609)
+04- Sep-2023 00:04:45INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+04- Sep-2023 00:04:45INFO - Initializing Servlet 'dispatcherServlet'
+04- Sep-2023 00:04:45INFO - Completed initialization in 2 ms
+04- Sep-2023 00:04:45INFO - Request : GET /airlines/routes/100
+04- Sep-2023 00:04:45INFO - IP Address : 0:0:0:0:0:0:0:1
+04- Sep-2023 00:04:46INFO - Parameters [100]
+04- Sep-2023 00:04:46INFO - Method executed: com.java.AirlinesManagement.service.Services.getRouteById with result : RouteDto [routeId=100, source=Patna, destination=Noida, airlines=[AirlineDto [flightId=1, flightName=Vis, arrivalTime=10:00, departureTime=12:00, fare=1500.0], AirlineDto [flightId=2, flightName=null, arrivalTime=10:00, departureTime=10:30, fare=1500.0]]]
+04- Sep-2023 00:05:08INFO - Request : GET /airlines/routes/1
+04- Sep-2023 00:05:08INFO - IP Address : 0:0:0:0:0:0:0:1
+04- Sep-2023 00:05:08INFO - Parameters [1]
+04- Sep-2023 00:05:08WARN - Resolved [jakarta.validation.ConstraintViolationException: getRouteById.routeId: Minimum value can be 100]
+04- Sep-2023 10:51:14WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h40m1s131ms12µs700ns).
+04- Sep-2023 13:05:11WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s669ms190µs100ns).
+04- Sep-2023 14:07:37WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57m26s189ms681µs200ns).
+04- Sep-2023 15:58:15WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m7s195ms228µs500ns).
+04- Sep-2023 16:05:23INFO - Application shutdown requested.
+04- Sep-2023 16:05:30INFO - Pausing ProtocolHandler ["http-nio-8080"]
+04- Sep-2023 16:05:30INFO - Stopping service [Tomcat]
+04- Sep-2023 16:05:30INFO - Destroying Spring FrameworkServlet 'dispatcherServlet'
+04- Sep-2023 16:05:32INFO - Stopping ProtocolHandler ["http-nio-8080"]
+04- Sep-2023 16:05:32INFO - Destroying ProtocolHandler ["http-nio-8080"]
+04- Sep-2023 16:05:33INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+04- Sep-2023 16:05:35INFO - HikariPool-1 - Shutdown initiated...
+04- Sep-2023 16:05:36INFO - HikariPool-1 - Shutdown completed.
+13- Sep-2023 18:30:15INFO - HV000001: Hibernate Validator 8.0.0.Final
+13- Sep-2023 18:30:18INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 19424 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+13- Sep-2023 18:30:19INFO - No active profile set, falling back to 1 default profile: "default"
+13- Sep-2023 18:30:22INFO - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13- Sep-2023 18:30:22INFO - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13- Sep-2023 18:30:35INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13- Sep-2023 18:30:35INFO - Finished Spring Data repository scanning in 216 ms. Found 2 JPA repository interfaces.
+13- Sep-2023 18:30:39INFO - Tomcat initialized with port(s): 8080 (http)
+13- Sep-2023 18:30:39INFO - Initializing ProtocolHandler ["http-nio-8080"]
+13- Sep-2023 18:30:39INFO - Starting service [Tomcat]
+13- Sep-2023 18:30:39INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+13- Sep-2023 18:30:39INFO - Initializing Spring embedded WebApplicationContext
+13- Sep-2023 18:30:39INFO - Root WebApplicationContext: initialization completed in 17669 ms
+13- Sep-2023 18:30:40INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+13- Sep-2023 18:30:40INFO - HHH000412: Hibernate ORM core version 6.2.5.Final
+13- Sep-2023 18:30:40INFO - HHH000406: Using bytecode reflection optimizer
+13- Sep-2023 18:30:41INFO - HHH000021: Bytecode provider name : bytebuddy
+13- Sep-2023 18:30:42INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+13- Sep-2023 18:30:42INFO - HikariPool-1 - Starting...
+13- Sep-2023 18:30:45INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d5bb534
+13- Sep-2023 18:30:45INFO - HikariPool-1 - Start completed.
+13- Sep-2023 18:30:46WARN - HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13- Sep-2023 18:30:47INFO - HHH000021: Bytecode provider name : bytebuddy
+13- Sep-2023 18:30:50INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13- Sep-2023 18:30:52INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13- Sep-2023 18:30:55WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13- Sep-2023 18:30:57INFO - LiveReload server is running on port 35729
+13- Sep-2023 18:30:57INFO - Starting ProtocolHandler ["http-nio-8080"]
+13- Sep-2023 18:30:57INFO - Tomcat started on port(s): 8080 (http) with context path '/airlines'
+13- Sep-2023 18:30:57INFO - Started AirlinesManagementApplication in 44.986 seconds (process running for 47.377)
+13- Sep-2023 18:34:53INFO - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+13- Sep-2023 18:34:53INFO - Pausing ProtocolHandler ["http-nio-8080"]
+13- Sep-2023 18:34:53INFO - Stopping service [Tomcat]
+13- Sep-2023 18:34:53INFO - Stopping ProtocolHandler ["http-nio-8080"]
+13- Sep-2023 18:34:53INFO - Destroying ProtocolHandler ["http-nio-8080"]
+13- Sep-2023 18:34:53INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+13- Sep-2023 18:34:53INFO - HikariPool-1 - Shutdown initiated...
+13- Sep-2023 18:34:53INFO - HikariPool-1 - Shutdown completed.
+13- Sep-2023 18:34:53INFO - Starting AirlinesManagementApplication using Java 17.0.7 with PID 19424 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\AirlinesManagement)
+13- Sep-2023 18:34:53INFO - No active profile set, falling back to 1 default profile: "default"
+13- Sep-2023 18:34:53INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13- Sep-2023 18:34:53INFO - Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+13- Sep-2023 18:34:53INFO - Tomcat initialized with port(s): 8080 (http)
+13- Sep-2023 18:34:53INFO - Initializing ProtocolHandler ["http-nio-8080"]
+13- Sep-2023 18:34:53INFO - Starting service [Tomcat]
+13- Sep-2023 18:34:53INFO - Starting Servlet engine: [Apache Tomcat/10.1.10]
+13- Sep-2023 18:34:53INFO - Initializing Spring embedded WebApplicationContext
+13- Sep-2023 18:34:53INFO - Root WebApplicationContext: initialization completed in 730 ms
+13- Sep-2023 18:34:54INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+13- Sep-2023 18:34:54INFO - HHH000021: Bytecode provider name : bytebuddy
+13- Sep-2023 18:34:54INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+13- Sep-2023 18:34:54INFO - HikariPool-2 - Starting...
+13- Sep-2023 18:34:54INFO - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2627cba7
+13- Sep-2023 18:34:54INFO - HikariPool-2 - Start completed.
+13- Sep-2023 18:34:54WARN - HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13- Sep-2023 18:34:54INFO - HHH000021: Bytecode provider name : bytebuddy
+13- Sep-2023 18:34:54INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13- Sep-2023 18:34:54INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13- Sep-2023 18:34:54WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13- Sep-2023 18:34:55INFO - LiveReload server is running on port 35729
+13- Sep-2023 18:34:55INFO - Starting ProtocolHandler ["http-nio-8080"]
+13- Sep-2023 18:34:55INFO - Tomcat started on port(s): 8080 (http) with context path '/airlines'
+13- Sep-2023 18:34:55INFO - Started AirlinesManagementApplication in 2.201 seconds (process running for 285.327)
+13- Sep-2023 18:34:55INFO - Condition evaluation unchanged

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status ="INFO">
+	<Appenders>
+		<File name= "LogFile" fileName ="logs/logFile.log">
+			<PatternLayout>
+				<Pattern>%d{dd- MMM-YYYY HH:mm:ss}%level - %m%n</Pattern>
+			</PatternLayout>
+		</File>
+		<Console name= "Console">
+			<!--<PatternLayout>
+				<Pattern>%d{dd- MMM-YYYY HH:mm:ss}%level - %m%n</Pattern>
+			</PatternLayout>-->
+			<JsonTemplateLayout locationInfoEnabled="true" stackTraceEnabled="true" eventTemplateUri = "classpath:JsonLayout.json"/>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level = "INFO">
+			<AppenderRef ref = "LogFile"/>
+			<AppenderRef ref= "Console" />
+		</Root>
+	</Loggers>
+</Configuration>
