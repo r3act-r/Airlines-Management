@@ -4,16 +4,34 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+<<<<<<< HEAD
+=======
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+>>>>>>> 4bd299e (Added JWT)
 import org.springframework.stereotype.Service;
 
 import com.java.AirlinesManagement.dto.AirlineDto;
 import com.java.AirlinesManagement.dto.RouteDto;
+<<<<<<< HEAD
 import com.java.AirlinesManagement.entity.AirlineEntity;
 import com.java.AirlinesManagement.entity.RouteEntity;
 import com.java.AirlinesManagement.exceptions.AirlineException;
 import com.java.AirlinesManagement.exceptions.RouteException;
 import com.java.AirlinesManagement.repository.AirlineRepository;
 import com.java.AirlinesManagement.repository.RouteRepository;
+=======
+import com.java.AirlinesManagement.dto.UserDto;
+import com.java.AirlinesManagement.entity.AirlineEntity;
+import com.java.AirlinesManagement.entity.RouteEntity;
+import com.java.AirlinesManagement.entity.UserEntity;
+import com.java.AirlinesManagement.exceptions.AirlineException;
+import com.java.AirlinesManagement.exceptions.RouteException;
+import com.java.AirlinesManagement.exceptions.UserException;
+import com.java.AirlinesManagement.repository.AirlineRepository;
+import com.java.AirlinesManagement.repository.RouteRepository;
+import com.java.AirlinesManagement.repository.UserRepository;
+>>>>>>> 4bd299e (Added JWT)
 
 import jakarta.transaction.Transactional;
 
@@ -27,6 +45,15 @@ public class Services {
 	@Autowired
 	public AirlineRepository airRepo;
 	
+<<<<<<< HEAD
+=======
+	@Autowired
+	public UserRepository userRepo;
+	
+	@Autowired
+	private BCryptPasswordEncoder passwordEncoder;
+	
+>>>>>>> 4bd299e (Added JWT)
 	public int addRoute(RouteDto dto ) throws RouteException{
 		
 		Optional<RouteEntity> optional = routeRepo.findBySourceAndDestination(dto.getSource(),dto.getDestination());
@@ -38,6 +65,22 @@ public class Services {
 		routeRepo.save(route);
 		return route.getRouteId();
 	}
+<<<<<<< HEAD
+=======
+	
+	public int registerUser(UserDto userDto)throws UsernameNotFoundException{
+		Optional<UserEntity> data = userRepo.findByEmail(userDto.getEmail());
+		if(data.isPresent()) {
+			throw new UsernameNotFoundException("User name already exist");
+		}
+		
+		UserEntity user = userDto.userDtotoEntity(userDto);
+		user.setPassword(passwordEncoder.encode(user.getPassword()));
+		userRepo.save(user);
+		
+		return user.getId();
+	}
+>>>>>>> 4bd299e (Added JWT)
 
 	public RouteDto getRouteById(int routeId) throws RouteException
 	{

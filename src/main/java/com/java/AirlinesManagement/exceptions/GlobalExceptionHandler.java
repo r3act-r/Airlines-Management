@@ -28,8 +28,21 @@ public class GlobalExceptionHandler  {
 		
 		return new ResponseEntity<ErrorInfo>(err,HttpStatus.NOT_FOUND);
 	}
+<<<<<<< HEAD
 	
 	
+=======
+	@ExceptionHandler(UserException.class)
+	public ResponseEntity<ErrorInfo>userNotFound(UserException ex)
+	{
+		ErrorInfo err= new ErrorInfo();
+		err.setMessage(ex.getMessage());
+		err.setStatus(HttpStatus.NOT_ACCEPTABLE.value());
+		err.setTimeStamp(new Date().toString());
+		
+		return new ResponseEntity<ErrorInfo>(err,HttpStatus.NOT_ACCEPTABLE);
+	}
+>>>>>>> 4bd299e (Added JWT)
 	@ExceptionHandler(AirlineException.class)
 	public ResponseEntity<ErrorInfo> airlineNotFoundException(AirlineException ex)
 	{
